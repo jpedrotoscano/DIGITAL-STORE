@@ -6,43 +6,47 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Inter", sans-serif;
+    list-style: none;
 }
 
 :root {
     --dark-gray: #1F1F1F;
-    --input-grey: #F5F5F5;
-    --light-grey: #CCCCCC;
+    --light-grey: #F5F5F5;
+    --light-grey-2: #CCCCCC;
     --light-grey-3: #F5F5F5;
     --white: #FFFFFF;
     --bg: #F9F8FE;
-    --pink-btn: #C92071;    
+    --pink-btn: #C92071;
+    --pink-hv: #991956;   
 }
 
 header{
     width: 100vw;
-    margin-bottom: 100px;
+}
+
+header .header-container {
+    padding: 72px 100px;
 }
 
 .header1{
     width: 100%;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    
 }
 
 header .header1 > img{
     width: 253px;
     height: 44px;
-    margin-top: 42px;
+    margin-right: 27px;
     
 }
 
 header .header1 > input{
     width: 559px;
     height: 60px;
-    margin-top: 34px;
-    margin-left: 1.6rem;
+    margin-right: 48px;
+    background: var(--light-grey);
     border: none;
     border-radius: 8px;
     text-indent: 24px;
@@ -54,23 +58,29 @@ header .header1 > input{
     line-height: 28px;
     letter-spacing: 0.75px;
     text-align: left;
-    font-family: Inter;
     color: #666666;
     font-size: 16px;
+    margin-right: 30px;
+}
+
+.pesquisa:focus{
+    outline: none;
+    border: 2px solid var(--pink-btn)
 }
 
 .registrar{
-    font-family: Inter;
     font-weight: 400;
-    line-height: 28px;
     letter-spacing: 0.75px;
     font-size: 16px;
     color: #474747;
-    width: 102px;
-    height: 28px;
-    margin-top: 50px;
-    margin-left: 3rem;
+    height: 20px;
     border-bottom: 1px solid #474747;
+    margin-right: 30px;
+}
+
+.registrar:hover {
+    color: var(--pink-btn);
+    border-bottom: 1px solid var(--pink-btn);
 }
 
 .entrar{
@@ -81,43 +91,116 @@ header .header1 > input{
     line-height: 22px;
     letter-spacing: 0.75px;
     text-align: center;
-    font-family: Inter;
-    margin-top: 45px;
-    margin-left: 2rem;
-    background-color: #C92071;
+    margin-right: 70px;
+    background-color: var(--pink-btn);
     border: none;
     border-radius: 7px;
     color: #F5F5F5;
-    ;
+}
+
+.entrar:hover {
+    background-color: var(--pink-hv);
+}
+
+.entrar:active {
+    background-color: var(--light-grey-2);
 }
 
 .carrinho{
     width: 24px;
     height: 24px;
-    margin-top: 52px;
-    margin-left: 4.3rem;
 }
 
 .navbar{
-    margin-top: 3%;
+    margin-top: 40px;
     width: 100%;
-    margin-left: 14.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 246px;
+    
+}
 
-
-.navbar > a{
-    margin-right: 2rem;
+.navbar ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 32px;
     color: #474747;
-
 }
 
-
+.navbar a:hover {
+    color: var(--pink-btn);
+}
 
 .navbar .home{
-    border-bottom: 1px solid #C92071;
-    color: #C92071;
-    ;
+    border-bottom: 2px solid var(--pink-btn);
+    color: var(--pink-btn);
+}
+
+.collections {
+    width: 100%;
+    padding: 6.25rem 0;
+    margin: 0 auto;
+}
+
+.collections h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 50px
+}
+
+.collections .collection-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0 auto;
+    
+}
+
+.collections .collection-container .collection {
+    margin-right: 38px;
+}
+
+.collections .collection-container .selected-collection {
+    box-shadow: 0px 4px 25px 0px #0000000D;
+}
+
+.collections .collection-container .collection a{
+    
+    width: 104px;
+    height: 104px;
+    background-color: var(--white);
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collections .collection-container .collection a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.collections .collection-container .collection p {
+    text-align: center;
+    margin-top: 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #474747;
 }
 
 #container-destaque {
@@ -298,7 +381,7 @@ footer {
 }
 
 .footer-container .info a:hover {
-    border-bottom: 1px solid var(--white);
+    color: var(--pink-btn);
 }
 
 .footer-container .categories {
@@ -318,7 +401,7 @@ footer {
 }
 
 .footer-container .categories a:hover {
-    border-bottom: 1px solid var(--white);
+    color: var(--pink-btn);
 }
 
 .footer-container .contact {

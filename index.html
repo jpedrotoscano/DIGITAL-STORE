@@ -3,61 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DRIP STORE</title>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body> 
     <header>
-        <div class="header1">
-            <img src="images/logo.svg" alt="logo">
-            <input class="pesquisa" type="search" placeholder="Pesquisar produto..." >
-            <a class="registrar" href="">Cadastre-se</a>
-            <button class="entrar">Entrar</button>
-            <a class="carrinho" href=""><img src="images/kart.svg" alt="carrinho-de-compras"></a>
-        </div>
-        <div class="navbar">
-            <a class="home" href="">Home</a> 
-            <a href="">Produtos</a>
-            <a href="">Categorias</a>
-            <a href="">Meus Pedidos</a>
+        <div class="header-container">
+            <div class="header1">
+                <img src="images/logo.svg" alt="logo">
+                <input class="pesquisa" type="search" placeholder="Pesquisar produto..." >
+                <a class="registrar" href="">Cadastre-se</a>
+                <button class="entrar">Entrar</button>
+                <a class="carrinho" href=""><img src="images/kart.svg" alt="carrinho-de-compras"></a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a class="home" href="">Home</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Categorias</a></li>
+                    <li><a href="">Meus Pedidos</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+    <main>
+        <section id="container-destaque">
+            <h3>Coleções em destaque</h3>
+            <div class="infos">
+                <div class="info">
+                    <div>
+                        <p>30% OFF</p>
+                        <h4>Novo drop Supreme</h4>
+                        <a class="compra" href="">Comprar</a>
+                    </div>
+                    <div class="container-img">
+                        <img src="images/supreme.svg" alt="Camisa Supreme">
+                    </div>
 
-    <section id="container-destaque">
-        <h3>Coleções em destaque</h3>
-        <div class="infos">
-            <div class="info">
-                <div>
-                    <p>30% OFF</p>
-                    <h4>Novo drop Supreme</h4>
-                    <a class="compra" href="">Comprar</a>
                 </div>
-                <div class="container-img">
-                    <img src="images/supreme.svg" alt="Camisa Supreme">
+                <div class="info">
+                    <div>
+                        <p>30% OFF</p>
+                        <h4>Coleção Adidas</h4>
+                        <a class="compra" href="">Comprar</a>
+                    </div>
+                    <div class="container-img">
+                        <img src="images/adidas.svg" alt="Tenis adidas">
+                    </div>
                 </div>
-                
-            </div>
-            <div class="info">
-                <div>
-                    <p>30% OFF</p>
-                    <h4>Coleção Adidas</h4>
-                    <a class="compra" href="">Comprar</a>
-                </div>
-                <div class="container-img">
-                    <img src="images/adidas.svg" alt="Tenis adidas">
+                <div class="info">
+                    <div>
+                        <p>30% OFF</p>
+                        <h4>Beats Bass</h4>
+                        <a class="compra" href="">Comprar</a>
+                    </div>
+                    <img src="images/beats.svg" alt="Headephone">
                 </div>
             </div>
-            <div class="info">
-                <div>
-                    <p>30% OFF</p>
-                    <h4>Beats Bass</h4>
-                    <a class="compra" href="">Comprar</a>
+        </section>
+        <div class="collections">
+            <h3>Coleções em destaque</h3>
+            <div class="collection-container">
+                <div class="collection">
+                    <a href="#" class="selected-collection">
+                        <img src="./images/icon-tshirt.svg" alt="Icone de camiseta">
+                    </a>
+                    <p>Camisetas</p>
                 </div>
-                <img src="images/beats.svg" alt="Headephone">
+                <div class="collection">
+                    <a href="#">
+                        <img src="./images/icon-pants.svg" alt="Icone de camiseta">
+                    </a>
+                    <p>Calças</p>
+                </div>
+                <div class="collection">
+                    <a href="#">
+                        <img src="./images/icon-pants.svg" alt="Icone de calça">
+                    </a>
+                    <p>Bonés</p>
+                </div>
+                <div class="collection">
+                    <a href="#">
+                        <img src="./images/icon-boot.svg" alt="Icone de tênis">
+                    </a >
+                    <p>Tênis</p>
+                </div>
+                <div class="collection">
+                    <a href="#">
+                        <img src="./images/icon-headphone.svg" alt="Icone de headphone">
+                    </a>
+                    <p>Headphones</p>
+                </div>
             </div>
         </div>
-    </section>
-
+    </main>
     <footer>
         <div class="footer-container">
             <div class="about-us">
