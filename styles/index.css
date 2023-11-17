@@ -143,6 +143,66 @@ header .header1 > input{
     color: var(--pink-btn);
 }
 
+.collections {
+    width: 100%;
+    padding: 6.25rem 0;
+    margin: 0 auto;
+}
+
+.collections h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 50px
+}
+
+.collections .collection-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0 auto;
+    
+}
+
+.collections .collection-container .collection {
+    margin-right: 38px;
+}
+
+.collections .collection-container .selected-collection {
+    box-shadow: 0px 4px 25px 0px #0000000D;
+}
+
+.collections .collection-container .collection a{
+    
+    width: 104px;
+    height: 104px;
+    background-color: var(--white);
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collections .collection-container .collection a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.collections .collection-container .collection p {
+    text-align: center;
+    margin-top: 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #474747;
+}
+
 
 footer {
     background-color: var(--dark-gray);
