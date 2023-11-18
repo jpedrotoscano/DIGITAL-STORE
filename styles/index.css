@@ -325,6 +325,105 @@ header .header1 > input{
     transform: translate(-50%, -50%);
 }
 
+.cont-products {
+    margin: 7.6rem 16.3rem 0 16.3rem;
+
+}
+
+.cont-products .info-shoe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont-products .info-shoe h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cont-products .info-shoe a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--pink-btn);
+    text-decoration: none;
+}
+
+
+.cont-products .produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    
+}
+
+.cont-products .produtos .produto {
+    margin: 1.25rem 0 1.25rem 0;
+}
+
+.cont-products .produtos .produto .container-produto {
+    background-color: #FFFFFF;
+    width: 18.25rem;
+    height: 20rem;
+    padding: 1.25rem 0 0 1.25rem;
+    position: relative;
+    
+}
+
+.cont-products .produtos .produto .container-produto  p {
+    background-color: #E7FF86;
+    color: #474747;
+    border-radius: 29px;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cont-products .produtos .produto .container-produto img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9.1rem;
+    margin-left: -10rem;
+}
+
+.cont-products .produtos .produto .tipo-produto {
+    margin-top: 1.1rem;
+    font-size: 12px;
+    font-weight: 700;
+    color: #8F8F8F;
+}
+
+.cont-products .produtos .produto .nome-produto {
+    font-size: 24px;
+    font-weight: 400;
+    color: #474747;
+}
+
+.cont-products .produtos .produto .preco {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cont-products .produtos .produto .preco .valor-inicial {
+    text-decoration:line-through;
+    font-size: 24px;
+    font-weight: 400;
+    color: #8F8F8F;
+    margin-right: .5rem;
+}
+
+.cont-products .produtos .produto .preco .promocao {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
 footer {
     background-color: var(--dark-gray);
     color: var(--white);
