@@ -451,7 +451,6 @@ header .header1 > input{
 .special-offer {
     width: 100%;
     display: flex;
-    /* align-items: center; */
     padding: 87px 0 0 129px;
 }
 
